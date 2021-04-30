@@ -49,27 +49,28 @@
 						</div>
 					</div>
 					<div class="column is-one-third has-text-left">
-						<div class="field">
-							<label class="label">Name</label>
-							<div class="control">
-								<input class="input is-medium" type="text">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label">Email</label>
-							<div class="control">
-								<input class="input is-medium" type="text">
-							</div>
-						</div>
-						<div class="field">
-							<label class="label">Message</label>
-							<div class="control">
-								<textarea class="textarea is-medium"></textarea>
-							</div>
-						</div>
-						<div class="control">
-							<button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Send Message</button>
-						</div>
+                        <form
+                            action="https://formspree.io/f/xyylkwrg"
+                            method="POST"
+                            >
+                            <div class="field">
+                                <label class="label">Your email:</label>
+                                <div class="control">
+                                    <input class="input is-medium" type="email" name="_replyto">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Your message:</label>
+                                <div class="control">
+                                    <textarea class="textarea is-medium" name="message"></textarea>
+                                </div>
+                            </div>
+                            <!-- your other form fields go here -->
+
+                            <div class="control">
+                                <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Send Message</button>
+                            </div>
+                        </form>
 					</div>
 				</div>
 			</div>
